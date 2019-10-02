@@ -82,6 +82,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c3);
         Category c4= new Category("Science");
         insertCategory(c4);
+        addCategory(c4);
     }
 
     public void addCategory(Category category) {
@@ -127,7 +128,11 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         Question q6 = new Question("Non existing, Medium: B is correct",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
-        insertQuestion(q6);
+        insertQuestion(q7);
+        Question q6 = new Question("Non existing, Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, 5);
+        insertQuestion(q7);
     }
 
     public void addQuestion(Question question) {
