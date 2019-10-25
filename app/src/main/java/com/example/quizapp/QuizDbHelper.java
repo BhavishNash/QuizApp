@@ -82,7 +82,13 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c3);
         Category c4= new Category("Science");
         insertCategory(c4);
-        addCategory(c4);
+         Category c5= new Category("Physics");
+        insertCategory(c5);
+         Category c6= new Category("Chemistry");
+        insertCategory(c6);
+         Category c7= new Category("Biology");
+        insertCategory(c7);
+        addCategory(c7);
     }
 
     public void addCategory(Category category) {
@@ -125,14 +131,26 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "A", "B", "C", 1,
                 Question.DIFFICULTY_EASY, Category.MATH);
         insertQuestion(q5);
-        Question q6 = new Question("Non existing, Medium: B is correct",
+        Question q6 = new Question("When is Indepedence day?",
+                "A: 1948", "B: 1947", "C: 1946", 2,
+                Question.DIFFICULTY_MEDIUM, 5);
+        insertQuestion(q6);
+        Question q7 = new Question("Non existing, Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, 5);
+        insertQuestion(q6);
+          Question q7 = new Question("Non existing, Medium: B is correct",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
         insertQuestion(q7);
-        Question q6 = new Question("Non existing, Medium: B is correct",
+          Question q8 = new Question("Non existing, Medium: B is correct",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
-        insertQuestion(q7);
+        insertQuestion(q8);
+          Question q9 = new Question("Non existing, Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, 5);
+        insertQuestion(q9);
     }
 
     public void addQuestion(Question question) {
